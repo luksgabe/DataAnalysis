@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAnalysis.Domain\DataAnalysis.Domain.csproj" />
+    <ProjectReference Include="..\DataAnalysis.Infra.Data\DataAnalysis.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

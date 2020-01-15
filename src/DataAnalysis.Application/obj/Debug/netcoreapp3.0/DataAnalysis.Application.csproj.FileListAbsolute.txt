@@ -1,0 +1,16 @@
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\bin\Debug\netcoreapp3.0\DataAnalysis.Application.exe
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\bin\Debug\netcoreapp3.0\DataAnalysis.Application.deps.json
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\bin\Debug\netcoreapp3.0\DataAnalysis.Application.runtimeconfig.json
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\bin\Debug\netcoreapp3.0\DataAnalysis.Application.runtimeconfig.dev.json
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\bin\Debug\netcoreapp3.0\DataAnalysis.Application.dll
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\bin\Debug\netcoreapp3.0\DataAnalysis.Application.pdb
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\obj\Debug\netcoreapp3.0\DataAnalysis.Application.AssemblyInfoInputs.cache
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\obj\Debug\netcoreapp3.0\DataAnalysis.Application.AssemblyInfo.cs
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\obj\Debug\netcoreapp3.0\DataAnalysis.Application.dll
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\obj\Debug\netcoreapp3.0\DataAnalysis.Application.pdb
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\bin\Debug\netcoreapp3.0\DataAnalysis.Domain.dll
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\bin\Debug\netcoreapp3.0\DataAnalysis.Domain.pdb
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\obj\Debug\netcoreapp3.0\DataAnalysis.Application.csprojAssemblyReference.cache
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\obj\Debug\netcoreapp3.0\DataAnalysis.Application.csproj.CopyComplete
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\bin\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.dll
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Application\bin\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.pdb

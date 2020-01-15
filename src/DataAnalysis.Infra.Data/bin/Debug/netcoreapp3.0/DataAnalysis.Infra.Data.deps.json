@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "DataAnalysis.Infra.Data/1.0.0": {
+        "dependencies": {
+          "DataAnalysis.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DataAnalysis.Infra.Data.dll": {}
+        }
+      },
+      "DataAnalysis.Domain/1.0.0": {
+        "runtime": {
+          "DataAnalysis.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DataAnalysis.Infra.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataAnalysis.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

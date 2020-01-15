@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "DataAnalysis.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/DataAnalysis.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAnalysis.Domain.dll": {}
+        }
+      },
+      "DataAnalysis.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "DataAnalysis.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataAnalysis.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAnalysis.Infra.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DataAnalysis.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DataAnalysis.Domain/DataAnalysis.Domain.csproj",
+      "msbuildProject": "../DataAnalysis.Domain/DataAnalysis.Domain.csproj"
+    },
+    "DataAnalysis.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../DataAnalysis.Infra.Data/DataAnalysis.Infra.Data.csproj",
+      "msbuildProject": "../DataAnalysis.Infra.Data/DataAnalysis.Infra.Data.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "DataAnalysis.Domain >= 1.0.0",
+      "DataAnalysis.Infra.Data >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\lucas.pereira\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Application\\DataAnalysis.Application.csproj",
+      "projectName": "DataAnalysis.Application",
+      "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Application\\DataAnalysis.Application.csproj",
+      "packagesPath": "C:\\Users\\lucas.pereira\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\lucas.pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj": {
+              "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj"
+            },
+            "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj": {
+              "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

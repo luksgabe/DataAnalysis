@@ -1,0 +1,11 @@
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\bin\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.deps.json
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\bin\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.dll
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\bin\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.pdb
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\bin\Debug\netcoreapp3.0\DataAnalysis.Domain.dll
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\bin\Debug\netcoreapp3.0\DataAnalysis.Domain.pdb
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\obj\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.csprojAssemblyReference.cache
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\obj\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\obj\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.AssemblyInfo.cs
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\obj\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.csproj.CopyComplete
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\obj\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.dll
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.Data\obj\Debug\netcoreapp3.0\DataAnalysis.Infra.Data.pdb

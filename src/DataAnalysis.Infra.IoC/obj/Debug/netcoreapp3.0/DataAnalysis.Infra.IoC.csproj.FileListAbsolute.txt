@@ -1,0 +1,3 @@
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.IoC\obj\Debug\netcoreapp3.0\DataAnalysis.Infra.IoC.csprojAssemblyReference.cache
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.IoC\obj\Debug\netcoreapp3.0\DataAnalysis.Infra.IoC.AssemblyInfoInputs.cache
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Infra.IoC\obj\Debug\netcoreapp3.0\DataAnalysis.Infra.IoC.AssemblyInfo.cs
