@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using DataAnalysis.Domain.Entities;
 using DataAnalysis.Domain.Interfaces;
 using DataAnalysis.Domain.Models;
@@ -20,10 +21,10 @@ namespace DataAnalysis.Domain.Services
 
         public IEnumerable<Sale> GetAllSales()
         {
-            return _saleRepository.GetAll();
+            return _saleRepository.GetAll().ToList();
         }
 
-        public void SaveSalesman(List<FileModel> listFile)
+        public async Task SaveSalesman(List<FileModel> listFile)
         {
             var list = new List<Sale>();
 
@@ -33,7 +34,7 @@ namespace DataAnalysis.Domain.Services
                 list.Add(sale);
             });
 
-            _saleRepository.InsertMany(list);
+            await _saleRepository.InsertMany(list);
         }
 
         public long ReturnIdSaleMostValuable()

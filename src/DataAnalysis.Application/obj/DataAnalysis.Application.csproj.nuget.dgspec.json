@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Application\\DataAnalysis.Application.csproj": {}
+    "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Application\\DataAnalysis.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Application\\DataAnalysis.Application.csproj": {
+    "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Application\\DataAnalysis.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Application\\DataAnalysis.Application.csproj",
+        "projectUniqueName": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Application\\DataAnalysis.Application.csproj",
         "projectName": "DataAnalysis.Application",
-        "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Application\\DataAnalysis.Application.csproj",
+        "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Application\\DataAnalysis.Application.csproj",
         "packagesPath": "C:\\Users\\lucas.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Application\\obj\\",
+        "outputPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj": {
-                "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj"
+              "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj": {
+                "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj"
               },
-              "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj"
+              "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj"
               }
             }
           }
@@ -57,23 +57,33 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.2, 3.0.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj": {
+    "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj",
         "projectName": "DataAnalysis.Domain",
-        "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj",
+        "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj",
         "packagesPath": "C:\\Users\\lucas.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Domain\\obj\\",
+        "outputPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -112,23 +122,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj": {
+    "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj",
         "projectName": "DataAnalysis.Infra.Data",
-        "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj",
+        "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Infra.Data\\DataAnalysis.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\lucas.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Infra.Data\\obj\\",
+        "outputPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -147,8 +163,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj": {
-                "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\Agibank\\DataAnalysis\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj"
+              "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj": {
+                "projectPath": "C:\\Users\\lucas.pereira\\Documents\\Projetos Meta\\Testes\\DataAnalysis\\src\\DataAnalysis.Domain\\DataAnalysis.Domain.csproj"
               }
             }
           }
@@ -171,12 +187,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8,22 +8,22 @@ namespace DataAnalysis.Domain.Validations
     {
         public void DirectoryValidate(DirectoryInfo directory)
         {
-            DiretorioExiste(directory);
-            ArquivosExistentes(directory);
+            DirectoryExists(directory);
+            FilesExists(directory);
         }
 
         public void FileValidate(FileInfo file)
         {
-            ValidarExtensaoArquivo(file.Extension);
-            ValidarConteudoArquivo(file);
+            ValidateFileExtension(file.Extension);
+            ValidateFileContent(file);
         }
-        private void ValidarExtensaoArquivo(string extension)
+        private void ValidateFileExtension(string extension)
         {
             if (extension != ".dat" )
                 throw new Exception("Arquivo em formato inválido.");
         }
 
-        private void ValidarConteudoArquivo(FileInfo file)
+        private void ValidateFileContent(FileInfo file)
         {
             var conteudo = string.Empty;
 
@@ -38,7 +38,7 @@ namespace DataAnalysis.Domain.Validations
                     verifique o mesmo e garanta que dados sejam separados por 'ç'", file.Name));
         }
 
-        private void DiretorioExiste(DirectoryInfo directory)
+        private void DirectoryExists(DirectoryInfo directory)
         {
             if (!directory.Exists)
             {
@@ -47,7 +47,7 @@ namespace DataAnalysis.Domain.Validations
             }
         }
 
-        private void ArquivosExistentes(DirectoryInfo directory)
+        private void FilesExists(DirectoryInfo directory)
         {
             int numeroArquivos = directory.GetFiles().Length;
             if (numeroArquivos <= 0)

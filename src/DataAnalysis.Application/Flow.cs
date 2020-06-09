@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace DataAnalysis.Application
 {
@@ -31,14 +32,14 @@ namespace DataAnalysis.Application
             _saleService = new SaleService(_unityOfWork.saleRepository);
         }
 
-        public void Start()
+        public async Task Start()
         {
             try
             {
-                LerDadosVendedor();
-                LerDadosCliente();
-                LerDadosVendas();
-                MontarRelatorio();
+                await ReadSalesmanData();
+                await ReadCustomerData();
+                await ReadSalesData();
+                await CreateReport();
             }
             catch (Exception ex)
             {
@@ -46,42 +47,42 @@ namespace DataAnalysis.Application
             }
         }
 
-        private void MontarRelatorio()
+        private async Task CreateReport()
         {
-            _fileService.CreateReport();
+            await _fileService.CreateReport();
         }
 
-        private void LerDadosVendedor()
+        private async Task ReadSalesmanData()
         {
-            DirectoryInfo diretorio = retornaDiretorio();
-            List<FileModel> list = BuscarArquivos(diretorio, TypeData.SalesMan).ToList();
-            _salesmanService.SaveSalesman(list);
+            DirectoryInfo diretorio = await returnsDirectory();
+            List<FileModel> list = (await BrowseFiles(diretorio, TypeData.SalesMan)).ToList();
+            await _salesmanService.SaveSalesman(list);
         }
 
-        private void LerDadosCliente()
+        private async Task ReadCustomerData()
         {
-            DirectoryInfo diretorio = retornaDiretorio();
-            List<FileModel> list = BuscarArquivos(diretorio, TypeData.Customer).ToList();
-            _customerService.SaveCustomer(list);
+            DirectoryInfo diretorio = await returnsDirectory();
+            List<FileModel> list = (await BrowseFiles(diretorio, TypeData.Customer)).ToList();
+            await _customerService.SaveCustomer(list);
         }
 
-        private void LerDadosVendas()
+        private async Task ReadSalesData()
         {
-            DirectoryInfo diretorio = retornaDiretorio();
-            List<FileModel> list = BuscarArquivos(diretorio, TypeData.Sale).ToList();
-            _saleService.SaveSalesman(list);
+            DirectoryInfo diretorio = await returnsDirectory();
+            List<FileModel> list = (await BrowseFiles(diretorio, TypeData.Sale)).ToList();
+            await _saleService.SaveSalesman(list);
         }
 
-        private IEnumerable<FileModel> BuscarArquivos(DirectoryInfo dir, TypeData typeID)
+        private async Task<IEnumerable<FileModel>> BrowseFiles(DirectoryInfo dir, TypeData typeID)
         {
             if (listaArquivos != null && listaArquivos.Any())
-            {
-                return _fileService.GetByType(listaArquivos, typeID);
-            }
+                return await _fileService.GetByType(listaArquivos, typeID);
             else
             {
                 _fileValidation.DirectoryValidate(dir);
 
+
+                //alterar aqui para ficar observando pasta de diretório
                 listaArquivos = new List<FileInfo>();
                 dir.GetFiles().ToList().ForEach(file =>
                 {
@@ -89,15 +90,31 @@ namespace DataAnalysis.Application
                     listaArquivos.Add(file);
                 });
 
-                return  _fileService.GetByType(listaArquivos.ToList(), typeID);
+                return await _fileService.GetByType(listaArquivos.ToList(), typeID);
             }
         }
 
-        private DirectoryInfo retornaDiretorio()
+        private async Task<DirectoryInfo> returnsDirectory()
         {
-            string pastaUser = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            var nomeDiretorio = string.Format("{0}\\data\\in", pastaUser);
-            return new DirectoryInfo(nomeDiretorio);
+            var homeDrive = Environment.GetEnvironmentVariable("HOMEDRIVE");
+            var homePath = Environment.GetEnvironmentVariable("HOMEPATH");
+            var directory = string.Empty;
+
+            if (!string.IsNullOrWhiteSpace(homeDrive) && !string.IsNullOrWhiteSpace(homePath))
+            {
+                directory = await Task.Run(() => {
+                    var fullHomePath = homeDrive + Path.DirectorySeparatorChar + homePath;
+                    return Path.Combine(fullHomePath, "data\\in");
+                });
+            }
+            else
+            {
+                throw new Exception("Erro de variável no sistema operaciona, não existe variável HOMEPATH OU HOMEDRIVE");
+            }
+
+            //string pastaUser = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            //var nomeDiretorio = string.Format("{0}\\data\\in", pastaUser);
+            return new DirectoryInfo(directory);
         }
     }
 }
