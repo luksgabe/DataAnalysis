@@ -1,6 +1,5 @@
 ﻿
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using DataAnalysis.Domain.Interfaces;
 
 namespace DataAnalysis.Infra.Data.Repositories
@@ -13,7 +12,7 @@ namespace DataAnalysis.Infra.Data.Repositories
             throw new System.NotImplementedException();
         }
 
-        public virtual async Task InsertMany(List<TEntity> entity)
+        public virtual void InsertMany(List<TEntity> entity)
         {
             throw new System.NotImplementedException();
         }

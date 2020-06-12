@@ -1,0 +1,4 @@
+1- Inicie a aplicação
+2- Coloque os arquivos .dat no diretório gerado c:/users/user/data/in
+3- Acesse a pasta out no diretório gerado c:/users/user/data/out
+4- visualize o novo arquivo .dat gerado com o relatório em seu conteúdo.

@@ -3,8 +3,6 @@ using DataAnalysis.Domain.Interfaces;
 using DataAnalysis.Domain.Models;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DataAnalysis.Domain.Services
 {
@@ -19,10 +17,10 @@ namespace DataAnalysis.Domain.Services
 
         public IEnumerable<Customer> GetAllCustomers()
         {
-            return _customerRepository.GetAll().ToList();
+            return _customerRepository.GetAll();
         }
 
-        public async Task SaveCustomer(List<FileModel> listFile)
+        public void SaveCustomer(List<FileModel> listFile)
         {
             var list = new List<Customer>();
 
@@ -32,7 +30,7 @@ namespace DataAnalysis.Domain.Services
                 list.Add(customer);
             });
 
-            await _customerRepository.InsertMany(list);
+            _customerRepository.InsertMany(list);
         }
 
         protected override Customer ConvertFileToEntity(FileModel model)

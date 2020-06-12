@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using DataAnalysis.Domain.Entities;
 using DataAnalysis.Domain.Enumerators;
 using DataAnalysis.Domain.Interfaces;
@@ -24,19 +23,19 @@ namespace DataAnalysis.Domain.Services
             _saleService = new SaleService(unityOfWork.saleRepository);
         }
 
-        public async Task CreateReport()
+        public void CreateReport()
         {
-            DirectoryInfo diretorio = await returnsOutputDirectory();
+            DirectoryInfo diretorio = retornaDiretorioSaida();
             using var writer = new StreamWriter(string.Format("{0}\\{{flat_file_name}}.done.dat", diretorio.FullName));
-            string conteudo = writeFile();
+            string conteudo = escreverArquivo();
             writer.Write(conteudo);
         }
 
-        private string writeFile()
+        private string escreverArquivo()
         {
-            IEnumerable<Salesman> listSalesmans = _salesmanService.GetAllSalesmens();
-            IEnumerable<Customer> listCustomers = _customerService.GetAllCustomers();
-            IEnumerable<Sale> listSales = _saleService.GetAllSales();
+            IEnumerable<Salesman> listSalesmans = _salesmanService.GetAllSalesmens().ToList();
+            IEnumerable<Customer> listCustomers = _customerService.GetAllCustomers().ToList();
+            IEnumerable<Sale> listSales = _saleService.GetAllSales().ToList();
 
             string conteudo = @$"
                 Numero de Clientes: {listCustomers.Count()}
@@ -48,27 +47,23 @@ namespace DataAnalysis.Domain.Services
             return conteudo;
         }
 
-        public async Task<IEnumerable<FileModel>> GetByType(List<FileInfo> listFile, TypeData type)
+        public IEnumerable<FileModel> GetByType(List<FileInfo> listFile, TypeData type)
         {
-            List<FileModel> listModel = await Task.Run(() =>
-            {
-                return listFile.Where(w => selectedType(w, type)).Select(p => new FileModel
-                {
-                    FileInfo = p,
-                    TypeData = type
-                }).ToList();
-            });
-            return listModel.ToList();
+            List<FileModel> listModel = listFile.Where(w => tipoSelecionado(w, type)).Select(p => new FileModel {
+                FileInfo = p,
+                TypeData = type
+            }).ToList();
+            return listModel;
         }
 
-        private bool selectedType(FileInfo file, TypeData type)
+        private bool tipoSelecionado(FileInfo file, TypeData type)
         {
             using var reader = new StreamReader(file.FullName);
             string conteudo = reader.ReadLine();
-            return conteudo.Contains(returnsDataType(type));
+            return conteudo.Contains(retornaTipoDado(type));
         }
 
-        private string returnsDataType(TypeData type)
+        private string retornaTipoDado(TypeData type)
         {
             var retorno = string.Empty;
             switch (type)
@@ -88,27 +83,11 @@ namespace DataAnalysis.Domain.Services
             return retorno;
         }
 
-        private async Task<DirectoryInfo> returnsOutputDirectory()
+        private DirectoryInfo retornaDiretorioSaida()
         {
-            var homeDrive = Environment.GetEnvironmentVariable("HOMEDRIVE");
-            var homePath = Environment.GetEnvironmentVariable("HOMEPATH");
-            var directory = string.Empty;
-
-            if (!string.IsNullOrWhiteSpace(homeDrive) && !string.IsNullOrWhiteSpace(homePath))
-            {
-                directory = await Task.Run(() => {
-                    var fullHomePath = homeDrive + Path.DirectorySeparatorChar + homePath;
-                    return Path.Combine(fullHomePath, "data\\out");
-                });
-            }
-            else
-            {
-                throw new Exception("Erro de variável no sistema operaciona, não existe variável HOMEPATH OU HOMEDRIVE");
-            }
-
-            //string pastaUser = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            //var nomeDiretorio = string.Format("{0}\\data\\out", pastaUser);
-            return new DirectoryInfo(directory);
+            string pastaUser = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            var nomeDiretorio = string.Format("{0}\\data\\out", pastaUser);
+            return new DirectoryInfo(nomeDiretorio);
         }
     }
 }

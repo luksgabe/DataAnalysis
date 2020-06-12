@@ -1,8 +1,8 @@
 C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Domain\bin\Debug\netcoreapp3.0\DataAnalysis.Domain.deps.json
 C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Domain\bin\Debug\netcoreapp3.0\DataAnalysis.Domain.dll
 C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Domain\bin\Debug\netcoreapp3.0\DataAnalysis.Domain.pdb
-C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Domain\obj\Debug\netcoreapp3.0\DataAnalysis.Domain.csprojAssemblyReference.cache
 C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Domain\obj\Debug\netcoreapp3.0\DataAnalysis.Domain.AssemblyInfoInputs.cache
 C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Domain\obj\Debug\netcoreapp3.0\DataAnalysis.Domain.AssemblyInfo.cs
 C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Domain\obj\Debug\netcoreapp3.0\DataAnalysis.Domain.dll
 C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Domain\obj\Debug\netcoreapp3.0\DataAnalysis.Domain.pdb
+C:\Users\lucas.pereira\Documents\Projetos Meta\Testes\Agibank\DataAnalysis\DataAnalysis.Domain\obj\Debug\netcoreapp3.0\DataAnalysis.Domain.csprojAssemblyReference.cache
